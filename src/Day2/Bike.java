@@ -33,6 +33,19 @@ public class Bike{
         return purchasedDate;
     }
 
+    public int getEngineNumber(){
+        return engineNumber;
+    }
+
+    public void setModel(String model){
+        this.model = model;
+    }
+    public void setBikeName(){
+        this.bikeName = bikeName;
+    }
+    public void setBikeColour(){
+        this.bikeColour = bikeColour;
+    }
     public void pressBrake(){
         System.out.println("Bike is stopped");
     }
@@ -41,9 +54,11 @@ public class Bike{
         System.out.println("Bike is in motion ");
     }
 
+
+
     public int accelerate(int velocity){
 
-       System.out.println("Bike is accelerated by  " + velocity  + "meter per second");
+       System.out.println("Bike is accelerated by  " + velocity  + " meter per second");
         return velocity;
     }
 
